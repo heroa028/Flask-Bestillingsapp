@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bestilling</title>
+    <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <h1>Velkommen til Burger King</h1>
+    <p>Velg Hvilke produkt du ønsker i menyen under:</p>
+    <label for="produkt">Produkt:</label>
+    <select name="produkt" id="produkt">
+        {%for produkt in produkter%}
+        <option value="{{produkt}}">{{produkt}}</option>
+        {%endfor%}
+    </select>
+    
+</body>
+</html>
