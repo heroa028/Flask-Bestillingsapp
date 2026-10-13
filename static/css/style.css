@@ -1,0 +1,16 @@
+img {
+    max-width: 40px;
+    height: auto;
+}
+.bk-text{
+      font-family: 'Shrikhand', 'Cooper Black', cursive, sans-serif;
+      color: #502314; 
+      background-color: #F5A800;
+      font-size: 48px;
+      letter-spacing: -1px;
+    }
+.bk-mini{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    size: 2vh;
+    color: #502314;
+}
