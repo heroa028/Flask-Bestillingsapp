@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forside</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
+    <title>{% block title %}Burger King{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
+
 <body>
-    
+    <img src="{{ url_for('static', filename='images/Burger_king-logo.svg') }}" alt="Burger_king-logo">
+    <h1>Velkommen til Burger king</h1>
+    <h1 class="bk-text">Home of the Whopper</h1>
+    <p class="bk-mini"> 
+        BURGER KING® ble grunnlagt i 1954 og er den nest største fastfood-hamburgerkjeden i verden. I Norge åpnet den
+        første Burger King-restauranten dørene i Oslo i 1988. Siden da har vi vokst, og teller nå 118 restauranter
+        fordelt over hele landet fra Mandal i sør, til Tromsø i nord. Burger King har i dag 18.000 restauranter i
+        verden, som serverer 2 milliarder Whoppere om året - stadig med den samme visjonen fra 1954. I dag er King Food
+        A/S master franchisetager i Norge og har ansvaret for brandet og dets franchisetagere. Globalt er Burger King
+        brandet eid av Restaurant Brands Internationale med hovedkontor i Miami, USA.</p>
+        <p class="Bestill">Bestill mat her:</p>
+        <a href="{{ url_for('bestilling')}}">Bestill nå</a>
+        <main>
+            {%block content%}
+            {%endblock%}
+        </main>
+
 </body>
+
 </html>
