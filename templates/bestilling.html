@@ -4,17 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bestilling</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
     <link rel="stylesheet"href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <h1>Velkommen til Burger King</h1>
-    <p>Velg Hvilke produkt du ønsker i menyen under:</p>
-    <label for="produkt">Produkt:</label>
-    <select name="produkt" id="produkt">
+    <div class="Logo2">
+    <img class="Logo" src="{{ url_for('static', filename='images/Burger_king-logo.svg') }}" alt="Burger_king-logo">
+    </div>
+    <h1>Velkommen til Burger King®</h1>
+    <div class="Meny">
+        
+    <p3 class="Velg">Velg Hvilke produkt du ønsker i menyen under:</p3>
+    <div class="Knapp">
         {%for produkt in produkter%}
-        <option value="{{produkt}}">{{produkt}}</option>
+        <button class="knapper" value="{{produkt}}">{{produkt}}</button>
         {%endfor%}
-    </select>
+        </div>
+        </div>
     
 </body>
 </html>
