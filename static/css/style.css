@@ -1,16 +1,117 @@
 img {
-    max-width: 40px;
+    max-width: 5vh;
     height: auto;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    padding-left: 50%;
 }
-.bk-text{
-      font-family: 'Shrikhand', 'Cooper Black', cursive, sans-serif;
-      color: #502314; 
-      background-color: #F5A800;
-      font-size: 48px;
-      letter-spacing: -1px;
-    }
-.bk-mini{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    size: 2vh;
+
+.Logo2 {
+    margin: 0;
+    background-color: #702f19;
+    width: 100%;
+}
+
+.bk-text {
+    font-family: 'Shrikhand', 'Cooper Black', cursive, sans-serif;
+    color: #e6c93a;
+    border-radius: 1vh;
+    padding: 1vh;
+    font-size: 48px;
+    letter-spacing: -1px;
+    margin: 0;
+    font-weight: normal;
+}
+
+.bk-mini {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    padding: 2vh;
+    line-height: 3vh;
+    font-size: 2vh;
     color: #502314;
+    background-color: #fdca5c;
+    border: solid, saddlebrown;
+    border-radius: 2vh;
+    height: 25vh;
+    width: 100vh;
+
+
 }
+
+.Bestill {
+    font-family: 'Shrikhand', 'Cooper Black', cursive, sans-serif;
+    color: #eb450e;
+    font-size: 3vh;
+}
+
+a {
+    text-decoration: none;
+    color: #fdca5c;
+    border: solid saddlebrown;
+    padding: 1vh;
+    background-color: #702f19;
+    border-radius: 1vh;
+}
+
+.link {
+    font-size: 5vh;
+}
+
+.tr {
+    background-image: url("../images/burger.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+    background-color: #F5A800;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: 'Shrikhand', 'Cooper Black', cursive, sans-serif;
+    color: #eb450e;
+    font-size: 7vh;
+}
+
+a {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 3vh;
+}
+
+.knapper {
+    display: flex;
+    padding: 2vh;
+    flex-direction: column;
+    justify-self: center;
+    justify-content: space-between;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    background-color: saddlebrown;
+    border: solid rgb(33, 15, 3);
+}
+.knapper:hover{
+
+    
+    background:linear-gradient(#F5A800 ,#6b4a04) ;
+    transition: all 0.4s;
+}
+
+.Meny {
+    padding: 2vh;
+}
+.p3{
+    font-weight: bold;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 5vh;
+}
+
