@@ -8,7 +8,7 @@ def index():
 
 @app.route("/bestilling", methods=["GET", "POST"])
 def bestilling():
-    produkter = ["Pizza", "Burger", "Fries", "Wrap", "Dressing", "Coca-Cola", "Pepsi_max", "Iste"]
+    produkter = ["Pizza", "Burger", "Fries", "Wrap", "Dressing", "Coca-Cola", "Pepsi max", "Iste"]
     if request.method == "POST":
         navn = request.form["navn"]
         produkt = request.form["produkt"]
