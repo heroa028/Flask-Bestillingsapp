@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/Burger_king-logo.svg') }}">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shrikhand&display=swap" rel="stylesheet">
@@ -11,9 +12,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
-<body>
-    <img src="{{ url_for('static', filename='images/Burger_king-logo.svg') }}" alt="Burger_king-logo">
-    <h1>Velkommen til Burger king</h1>
+<body class="tr">
+    <div class="Logo2">
+    <img class="Logo" src="{{ url_for('static', filename='images/Burger_king-logo.svg') }}" alt="Burger_king-logo">
+    </div>
+    <h1>Velkommen til Burger King®</h1>
     <h1 class="bk-text">Home of the Whopper</h1>
     <p class="bk-mini"> 
         BURGER KING® ble grunnlagt i 1954 og er den nest største fastfood-hamburgerkjeden i verden. I Norge åpnet den
@@ -23,7 +26,7 @@
         A/S master franchisetager i Norge og har ansvaret for brandet og dets franchisetagere. Globalt er Burger King
         brandet eid av Restaurant Brands Internationale med hovedkontor i Miami, USA.</p>
         <p class="Bestill">Bestill mat her:</p>
-        <a href="{{ url_for('bestilling')}}">Bestill nå</a>
+        <a class="link" href="{{ url_for('bestilling')}}">Bestill nå</a>
         <main>
             {%block content%}
             {%endblock%}
